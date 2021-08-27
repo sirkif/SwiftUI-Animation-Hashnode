@@ -19,13 +19,13 @@ struct ContentView: View {
                 .fill(rectColor)
                 .frame(width: 100, height: 100, alignment: .center)
                 .cornerRadius(rectCornerRadius)
-                .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/)
                 
-            
-            
             Button(action: {
-                rectColor = Color.pink
-                rectCornerRadius = 50
+                withAnimation(.easeIn) {
+                    rectColor = Color.pink
+                    rectCornerRadius = 50
+                }
+                
             }) {
                 Text("Animate the Box")
                     .foregroundColor(.white)
