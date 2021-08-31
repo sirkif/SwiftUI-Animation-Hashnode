@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LessonOne.swift
 //  SwiftUI-Animation-Hashnode
 //
 //  Created by Adam on 8/26/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LessonOne: View {
     
     @State private var rectColor: Color = Color.green
     @State private var rectCornerRadius: CGFloat = 0
@@ -38,8 +38,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LessonOne_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LessonOne()
     }
 }
