@@ -21,6 +21,7 @@ struct LessonOne: View {
                 .cornerRadius(rectCornerRadius)
                 
             Button(action: {
+                
                 withAnimation(.easeIn) {
                     rectColor = Color.pink
                     rectCornerRadius = 50
