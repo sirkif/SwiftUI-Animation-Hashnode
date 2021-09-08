@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_Animation_HashnodeApp: App {
     var body: some Scene {
         WindowGroup {
-            LessonOne()
+            LessonTwo()
         }
     }
 }
