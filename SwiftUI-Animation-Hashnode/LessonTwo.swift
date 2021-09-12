@@ -37,9 +37,7 @@ struct LessonTwo: View {
         }
         .animation(.easeInOut(duration: 1).repeatForever().delay(1))
         .onAppear {
-  
             spacingAnimation = 5
-            
         }
     }
 }
