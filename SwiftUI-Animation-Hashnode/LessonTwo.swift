@@ -13,7 +13,6 @@ struct LessonTwo: View {
     
     var body: some View {
         
-        // spacing: spacingAnimation ? CGFloat(15) : CGFloat(5)
         HStack(spacing: spacingAnimation){
             
             Capsule(style: .continuous)
@@ -36,11 +35,11 @@ struct LessonTwo: View {
                 .fill(Color(#colorLiteral(red: 0.02352941176, green: 0.8392156863, blue: 0.6274509804, alpha: 1)))
                 .frame(width: 10, height: 60)
         }
-        .animation(.easeInOut(duration: 4))
+        .animation(.easeInOut(duration: 1).repeatForever().delay(1))
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+  
             spacingAnimation = 5
-            }
+            
         }
     }
 }
